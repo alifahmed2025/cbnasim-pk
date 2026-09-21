@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050807;
+  color: #d6e6dc;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  cursor: none;
+  overflow-x: hidden;
+}
+
+/* Cursor is hidden and replaced by the glowing dot on devices with a fine
+   pointer only — keep the native cursor on touch devices. */
+@media (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+}
+
+::selection {
+  background: #39ff7a;
+  color: #050807;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #050807;
+}
+::-webkit-scrollbar-thumb {
+  background: #16241c;
+  border: 2px solid #050807;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1f8f4a;
+}
+
+.text-glow {
+  text-shadow: 0 0 12px rgba(57, 255, 122, 0.55);
+}
+
+.border-glow {
+  box-shadow: 0 0 0 1px rgba(57, 255, 122, 0.15), 0 0 24px rgba(57, 255, 122, 0.06);
+}
+
+.panel {
+  background: rgba(10, 16, 13, 0.7);
+  border: 1px solid #16241c;
+}
+
+.crt-flicker {
+  animation: flicker 6s infinite;
+}
+
+@keyframes flicker {
+  0%, 96%, 100% { opacity: 1; }
+  97% { opacity: 0.92; }
+  98% { opacity: 1; }
+  99% { opacity: 0.96; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --- Profile avatar: spinning neon ring + falling matrix glyphs --- */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-slow-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes glyph-fall {
+  0% { transform: translateY(-6px); opacity: 0; }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { transform: translateY(10px); opacity: 0; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(1.05); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+.animate-spin-slow-reverse {
+  animation: spin-slow-reverse 6s linear infinite;
+}
+.animate-glow-pulse {
+  animation: glow-pulse 3.5s ease-in-out infinite;
+}
