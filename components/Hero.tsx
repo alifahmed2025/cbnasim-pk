@@ -36,7 +36,7 @@ export default function Hero() {
 
         <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-ash">
           Offensive security researcher focused on{" "}
-          <span className="font-semibold text-white">Jr. Pentester</span>,{" "}
+          <span className="font-semibold text-white">Penetration Testing</span>,{" "}
           <span className="font-semibold text-white">Ethical Hacking</span>{" "}
           and{" "}
           <span className="font-semibold text-white">

@@ -8,7 +8,7 @@ import SkillCard from "@/components/about/SkillCard";
 
 const SKILL_GROUPS = [
   {
-    label: "Junior Penetration Testing",
+    label: "Penetration Testing",
     skills: [
       "OWASP Top 10",
       "Burp Suite Pro",

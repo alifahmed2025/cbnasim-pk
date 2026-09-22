@@ -3,13 +3,13 @@ import Footer from "@/components/Footer";
 import ContactRow from "@/components/contact/ContactRow";
 
 const CONTACTS = [
-  { label: "email", value: "root@#pNasim.me", href: "nsm.nasimpk@gmail.com" },
-  { label: "linkedin", value: "in/@#pNasim","href": "https://www.linkedin.com/in/md-nasim-pk" },
-  { label: "github", value: "@#pNasim", href: "https://github.com/Pnsmnasim/#pNasim" },
-  { label: "twitter_x", value: "@#pNasim", href: "https://x.com/Nasim492800Md/#pNasim" },
+  { label: "email", value: "root@#p.Nasim.me", href: "mailto:nsm.nasimpk@gmail.com" },
+  { label: "linkedin", value: "in/@#p.Nasim","href": "https://www.linkedin.com/in/md-nasim-pk" },
+  { label: "github", value: "@#p.Nasim", href: "https://github.com/Pnsmnasim/#pNasim" },
+  { label: "twitter_x", value: "@#p.Nasim", href: "https://x.com/Nasim492800Md/#pNasim" },
   { label: "telegram", value: "@md_nasim_pk", href: "https://t.me/naSimPk909" },
  // { label: "youtube", value: "@#cNasim", href: "https://youtube.com/@#cNasim" },
-  { label: "facebook", value: "@#pNasim", href: "https://www.facebook.com/share/19aekLQRD2/#pNasim" },
+  { label: "facebook", value: "@#p.Nasim", href: "https://www.facebook.com/share/19aekLQRD2/#pNasim" },
   //{ label: "blog", value: "blog.#cNasim.me", href: "https://blog.#cNasim.me" },
 ];
 

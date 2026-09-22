@@ -2,9 +2,9 @@ import InfoCard from "./InfoCard";
 
 const JOBS = [
   {
-    role: "Penetration Tester",
-    org: "Byte capsuleit Limited, Dhaka",
-    range: "Sep-21-2026",
+    role: "Junior Penetration Tester",
+    org: "Byte capsuleit, Dhaka",
+    range: "Sep 2026 - Present",
   }
   // {
   //   role: "Cybersecurity Engineer",
